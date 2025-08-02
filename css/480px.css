@@ -1,0 +1,83 @@
+@media (max-width: 480px) {
+
+
+/*Home container*/
+.home {
+    background-position: bottom;
+    background-size: contain;
+}
+
+/*Header*/
+
+.surf-text {
+   margin-left: 12px;
+   font-size: 25px;
+}
+
+header nav {
+    margin: 0;
+}
+
+.nav-item {
+  display: none;
+  margin: 0;
+}
+
+.nav-item-book {
+    padding: 0.5em 1em;
+    margin-right: 12px;
+    font-size: 17px;
+}
+
+/*Header Hovers*/
+.nav-item-book:hover {
+    padding: 0.55em 1.1em;
+}
+/*Surf logo box*/
+.logo-box {
+    margin: 22.4em auto;
+    margin-left: 1em;
+}
+
+/*Introduction*/
+.introduction-text-box {
+    width: 90%;
+    margin: 4em auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*Main-Locations*/
+
+/* main {
+    margin: auto;
+    text-align: center;
+    min-width: auto;
+}
+    
+.sub-locations {
+    margin: auto; 
+   margin-bottom: 1em;
+}
+.beach-card {
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.beach-photo {
+    width: 100%;
+    max-height: 300px;
+    min-width: 220px; 
+    max-width: 340px;
+} */
+           
+/*Services*/
+
+
+/*Contacts*/
+
+/*Footer*/
+
+}

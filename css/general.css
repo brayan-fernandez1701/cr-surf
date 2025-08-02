@@ -1,0 +1,333 @@
+/*Html-Body */
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+/*root -- Global clases*/
+
+:root {
+    --general-font-family: 'Montserrat', sans-serif;
+    --grafiti-font-family: 'Permanent Marker', cursive;
+    --primary-color: rgb(27, 129, 129);
+    --secondary-color: rgb(8, 76, 76);
+    --logo-font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+/*Home container*/
+.home {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgb(0,0,0,0.3),
+        rgb(0,0,0,0.3)
+    ),
+    url(/Proyect/imgs/photos/surf-inside-water.jpg);
+    background-position:center;
+    background-size: cover;
+    margin: auto;       
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.surf-text {
+   margin-left: 2em;
+   font-family: var(--grafiti-font-family);
+   font-size: 2rem;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+header nav {
+    margin-right: 1.5em;
+    font-family: var(--general-font-family);
+}
+
+.nav-item {
+    color: rgb(3, 3, 3);
+    padding: 0 0.5em;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.nav-item-book {
+    background-color: var(--secondary-color);
+    padding: 0.3em 0.6em;
+    border-radius: 12px 0px 12px 0;
+    color: #ffffff;
+    margin-left: 0.2em;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Header Hovers*/
+.nav-item:hover {
+    border-radius: 4px;
+    border-bottom: solid var(--secondary-color) 1px;
+}
+
+.nav-item-book:hover {
+    background-color: var(--primary-color);
+    padding: 0.3em 0.7em;
+    border-radius: 12px 0px 12px 0;
+    color: #ffffff;
+}
+
+/*Surf logo box*/
+.logo-box {
+    display: inline-block;
+    border: 3px solid #fff;
+    padding: 0 1em;
+    margin: 20em auto auto 5em;
+    text-align: center;
+    color: #000;
+
+}
+
+.img-logo {
+    width: 4em;
+    background-color: #fff;   
+    margin-top: -2em;
+    margin-bottom: -0.2em;
+} 
+
+.logo-text-box {
+    margin: -1em auto -0.8em;
+    font-family: var(--general-font-family);
+}
+
+.first-logo-text {
+    margin-bottom: -0.5em;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.second-logo-text {
+  font-family: monospace;
+  margin-bottom: 1.7em;
+}
+
+/*Introduction*/
+.introduction-text-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 5em auto;
+    margin-top: 5em;
+    font-family: 'Courier New', Courier;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: rgb(27, 129, 129);
+    color: #ffffff;
+}
+
+.introduction-text-box h1 {
+    margin: auto;
+    background-color: #ffffff;
+    color: rgb(27, 129, 129);;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+/*Main-Locations*/
+main {
+     margin: auto;
+    text-align: center;
+} 
+
+.sub-locations {
+    margin: 2em auto; 
+    font-family: var(--logo-font-family);
+    letter-spacing: 1.5px;
+}
+
+.beaches {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.beach-card {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.beach-photo {
+    height: 400px;
+    max-width: 400px; 
+    min-width: 300px; 
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.40);
+}
+
+/*
+
+.beach-card {
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.beach-photo {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.40);
+}
+*/
+
+.beach-text {
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: var(--logo-font-family);
+    background: rgba(0,0,0,0.6);
+    padding: 0.5em;
+    margin-top: -37px;
+    text-align: center;
+}
+
+/*Services*/
+.services-section {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 5em;
+    font-family: var(--general-font-family);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    width : 300px;
+    height: auto;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1e8585, #155f5f);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    padding-bottom: 2em;
+}
+
+.service-card-sub {
+    text-align: center;
+    border-bottom:  3px solid white;
+    border-radius: 12px;
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+
+.service-card-line {
+  margin: 0.5em 1em;
+}
+
+.service-card-line::before {
+    content: "✓";
+    color: #fff;
+    margin-right: 0.5em;
+}
+
+/*Contacts*/
+
+.contacts-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 16em;
+    width: 100%;
+    background-image: linear-gradient(
+        rgb(0,0,0,0.4),
+        rgb(0,0,0,0.4))
+    ,url(/Proyect/imgs/photos/photo-sea.avif);
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.contacts-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0 1em;            
+    padding: 0; 
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.contact-item{
+   display: flex;
+   align-items: center;
+}
+
+.contact-img {
+    max-width: 1.7em;
+    filter: invert(1);
+}
+
+.contact-text {
+    padding-left: 0.5em;
+    font-family: var(--general-font-family);
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+}
+
+/*Contacts Hover*/
+
+.contact-img:hover {
+    filter: invert(0);
+}
+
+/*Footer*/
+
+footer {
+    margin-left: 10px;
+    font-family: monospace, monospace;
+    font-size: small;
+}
+
+
