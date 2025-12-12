@@ -43,7 +43,7 @@ html, body {
         rgb(0,0,0,0.3),
         rgb(0,0,0,0.3)
     ),
-    url(/Proyect/imgs/photos/surf-inside-water.jpg);
+    url(/imgs/photos/surf-inside-water.jpg);
     background-position:center;
     background-size: cover;
     margin: auto;       
@@ -280,7 +280,7 @@ main {
     background-image: linear-gradient(
         rgb(0,0,0,0.4),
         rgb(0,0,0,0.4))
-    ,url(/Proyect/imgs/photos/photo-sea.avif);
+    ,url(/imgs/photos/photo-sea.avif);
     background-position: center;
     background-size: cover;
     color: rgb(255, 255, 255);
